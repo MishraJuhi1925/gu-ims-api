@@ -8,7 +8,6 @@ const cors = require('cors');
 const path = require('path')
 const app = express()
 
-app.use(express.static(path.join(__dirname,'./app','public')));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({limit:'1mb'}))
